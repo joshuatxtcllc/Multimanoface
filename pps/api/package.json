@@ -1,0 +1,10 @@
+{
+  "type":"module",
+  "scripts": { "build":"tsc", "start":"node dist/src/server.js", "dev":"tsx src/server.ts" },
+  "dependencies": {
+    "express":"^4.19.2","cors":"^2.8.5","node-fetch":"^3.3.2","cheerio":"^1.0.0-rc.12",
+    "nodemailer":"^6.9.12","@notionhq/client":"^2.2.15","googleapis":"^140.0.0",
+    "openai":"^4.56.0"
+  },
+  "devDependencies": { "tsx":"^4.7.0","typescript":"^5.5.4" }
+}
