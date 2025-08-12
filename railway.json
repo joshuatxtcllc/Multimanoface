@@ -1,0 +1,21 @@
+{
+  "services": [
+    {
+      "name": "api",
+      "path": "apps/api",
+      "env": { "PORT": "8080" },
+      "startCommand": "npm run start",
+      "installCommand": "npm ci",
+      "buildCommand": "npm run build"
+    },
+    {
+      "name": "web",
+      "path": "apps/web",
+      "env": { "VITE_API_URL": "https://<api-service>.up.railway.app" },
+      "startCommand": "npm run preview -- --port 3000 --host",
+      "installCommand": "npm ci",
+      "buildCommand": "npm run build",
+      "healthcheckPath": "/"
+    }
+  ]
+}
